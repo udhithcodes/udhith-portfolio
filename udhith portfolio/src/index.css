@@ -2,7 +2,7 @@
 
 @layer base {
     :root {
-        -primary: #06a2c2;
+        --primary: #06a2c2;
     }
 }
 
