@@ -70,22 +70,35 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}>
                 </div>
             )}
-            <div className={`fixed top-0 right-0 h-full w-80 bg-[#111827] z-50 transition-transform duration-300 
-                md:hidden ${ 
-                isMenuOpen ? 'translate' : 'translate-x-fill'
-                }p-8 flex flex-col`}>
-                <button className='self-end tzxt-white mb-10'
-                onClick={() => setIsMenuOpen(false)}>
-                    <x size={32}/>
+            <div
+                className={`fixed top-0 right-0 h-full w-80 bg-[#111827] z-50 transition-transform duration-300 
+                md:hidden ${isMenuOpen ? "translate" : "translate-x-fill"}p-8 flex flex-col`}
+            >
+                <button className="self-end text-white mb-10" onClick={() => setIsMenuOpen(false)}>
+                    <x size={32} />
                 </button>
-                <ul >
+                <ul className="flex flex-col gap-8">
+                  {menuIteams.map((item) => (
+                    <li key={item.name}>
+                        <button
+                        onClick={() => scrollToSection(item.href)}
+                        className="text-white text-xl
+                        front-semibold hover:text-primary
+                        transition-colors">
+                          {item.name}
+                        </button>
+                    </li>
+                  ))}
+                  <li className="pt-6">
+                      <button onClick={() => scrollToSection('#contact')}
+                      className="w-full bg-primary text-white
+                      py-4 rounded-xl text-lg font-bold">
+                          Contact Me
+                      </button>
+                  </li>
 
                 </ul>
             </div>
-
-            
-
-
     </header>
   );
 }
