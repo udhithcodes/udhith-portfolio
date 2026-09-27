@@ -70,11 +70,17 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}>
                 </div>
             )}
-            <div className={`fixed top-0 right-0 h-full w-80 bg-[#111827] z-50 transition-transform duration-300 md:hidden 
-             ${ 
-              isMenuOpen ? 'translate' : 'translate-x-fill'
-              }p-8 flex flex-col`}>
+            <div className={`fixed top-0 right-0 h-full w-80 bg-[#111827] z-50 transition-transform duration-300 
+                md:hidden ${ 
+                isMenuOpen ? 'translate' : 'translate-x-fill'
+                }p-8 flex flex-col`}>
+                <button className='self-end tzxt-white mb-10'
+                onClick={() => setIsMenuOpen(false)}>
+                    <x size={32}/>
+                </button>
+                <ul >
 
+                </ul>
             </div>
 
             
