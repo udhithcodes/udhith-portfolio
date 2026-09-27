@@ -9,7 +9,7 @@
 @layer utilities {
 
     .bg-primary {
-        baground-color: var(--primary);
+        background-color: var(--primary);
     }
 
     .text-primary {
