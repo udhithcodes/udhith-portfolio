@@ -1,6 +1,6 @@
-import { Download } from 'lucide-react'
-import React from 'react'
-import hero from '../assets/hero.png'
+import { Download } from 'lucide-react';
+import React from 'react';
+import hero from '../assets/hero.png';
 
 const HeroSection = () => {
     return (
@@ -50,6 +50,8 @@ const HeroSection = () => {
                     lg:text-left mx-auto max-w-xl'>
 
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequatur quisquam error fuga iure vero delectus earum
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Consequatur quisquam error fuga iure vero delectus earum
                          officiis! Veritatis, quae nobis.
 
@@ -154,4 +156,4 @@ const HeroSection = () => {
     )
 }
 
-export default HeroSection
+export default HeroSection;
