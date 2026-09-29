@@ -1,3 +1,4 @@
+import { Download } from 'lucide-react'
 import React from 'react'
 
 const HeroSection = () => {
@@ -25,7 +26,7 @@ const HeroSection = () => {
 
                 <div className='lg:py-6'>
                     
-                    <dev className='text-center lg:text-left'>
+                    <div className='text-center lg:text-left'>
 
                         <h1 className='pt-4 text-white font-bold 
                         text-4xl md:text-5xl lg:text-6xl'>
@@ -42,7 +43,7 @@ const HeroSection = () => {
                             👋
                         </h1>
 
-                    </dev>
+                    </div>
 
                     <p className='text-gray-300 pt-8 text-center 
                     lg:text-left mx-auto max-w-xl'>
@@ -53,7 +54,7 @@ const HeroSection = () => {
 
                     </p>
 
-                    <dev className='flex items-center gap-3 pt-9
+                    <div className='flex items-center gap-3 pt-9
                     flex-col sm:flex-row sm:w-max lg:mx-0'>
 
                         <button className='px-6 md:px-7 py-3
@@ -75,7 +76,37 @@ const HeroSection = () => {
 
                         </button>
 
-                    </dev>
+                        <button className='border border-primary
+                        px-6 md:px-7 py-3 rounded-full relative
+                        group w-full sm:w-max flex justify-center'>
+
+                            <div className='hover:scale-105 
+                            transition-all ease-in-out flex justify-center
+                            items-center relative'>
+
+                                <div className='svg-container'>
+
+                                    <Download sixe={18}
+                                    className='text-primary' />
+
+                                    <dev className='download-loader
+                                    text-white hidden'></dev>
+
+                                </div>
+
+                                <a href="/Udhith_R_Resume.pdf"
+                                download="Udhith_R_Resume.pdf"
+                                className='pl-2 text-primary'>
+
+                                    Download resume
+
+                                </a>
+
+                            </div>
+
+                        </button>
+
+                    </div>
 
                 </div>
 
