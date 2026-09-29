@@ -129,8 +129,16 @@ const HeroSection = () => {
                         md:right-40 sm:right-16
                         rounded-[30%_70%_70%_30%/30%_30%_70%_70%]
                         shadow-lg border border-cyan-500'>
+
+                            <img src={hero} 
+                            alt="Hero pic"
+                            width="500"
+                            height="auto"
+                            loading='lazy'
+                            className='w-full h-full
+                            rounded-[30%_70%_70%_30%/30%_30%_70%_70%]
+                            object-cover'/>
                             
-                            <img src={hero} alt=""/>
 
                         </div>
 
