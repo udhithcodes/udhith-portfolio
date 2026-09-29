@@ -1,5 +1,6 @@
 import { Download } from 'lucide-react'
 import React from 'react'
+import hero from '../assets/hero.png'
 
 const HeroSection = () => {
     return (
@@ -76,7 +77,7 @@ const HeroSection = () => {
 
                         </button>
 
-                        <button className='border border-primary
+                        <button className='border border-cyan-400
                         px-6 md:px-7 py-3 rounded-full relative
                         group w-full sm:w-max flex justify-center'>
 
@@ -86,11 +87,11 @@ const HeroSection = () => {
 
                                 <div className='svg-container'>
 
-                                    <Download sixe={18}
+                                    <Download size={18}
                                     className='text-primary' />
 
-                                    <dev className='download-loader
-                                    text-white hidden'></dev>
+                                    <div className='download-loader
+                                    text-white hidden'></div>
 
                                 </div>
 
@@ -105,6 +106,33 @@ const HeroSection = () => {
                             </div>
 
                         </button>
+
+                    </div>
+
+                </div>
+
+                <div className='lg:h-full md:flex'>
+
+                    <div className='flex w-full h-96 min-h-96
+                    lg:min-h-[none] lg:w-full lg:h-full items-center
+                    relative'>
+
+                        <div className='absolute z-0 top-1/2
+                        -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)]
+                        bg-linear-to-r opacity-25 from-[#0c64ac]
+                        to-primary blur-2xl'>
+
+                        </div>
+
+                        <div className='absolute h-full z-10 p-2
+                        -translate-y-1/2 top-1/2 lg:right-3
+                        md:right-40 sm:right-16
+                        rounded-[30%_70%_70%_30%/30%_30%_70%_70%]
+                        shadow-lg border border-cyan-500'>
+                            
+                            <img src={hero} alt=""/>
+
+                        </div>
 
                     </div>
 
