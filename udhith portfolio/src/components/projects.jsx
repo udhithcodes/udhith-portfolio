@@ -80,7 +80,7 @@ const Projects = () => {
                 lg:grid-cols-3 gap-5'>
 
                     {Projects.map((project) => (
-                        <div key={project.image}
+                        <div key={project.id}
 
                             className='bg-gray-800 rounded-lg overflow-hidden
                         shadow-sm hover:shadow-lg hover:scale-105
