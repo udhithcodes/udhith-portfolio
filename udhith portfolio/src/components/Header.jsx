@@ -26,7 +26,7 @@ const Header = () => {
             {/* Logo */}
 
               <div className='text-white text-3xl font-black cursor-pointer'>
-                  PORTFOLIO On Maintance...<span className='text-primary'>.</span>
+                  PORTFOLIO<span className='text-primary'>.</span>ㅤOn Maintance..!
               </div>
 
             {/* Navigation */}
