@@ -7,7 +7,8 @@ import Education from './components/Education'
 import Certificates from './components/Certificates'
 import AboutSection from './components/AboutSection'
 import Experience from './components/Experience'
-import { Projector } from 'lucide-react'
+import Projects from './components/projects'
+
 
 const App = () => {
     useEffect(() => {
@@ -25,7 +26,7 @@ const App = () => {
         <Certificates />
         <AboutSection />
         <Experience />
-        <Projector />
+        <Projects />
     </div>
   );
 }
