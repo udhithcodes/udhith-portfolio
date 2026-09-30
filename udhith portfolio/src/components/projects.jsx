@@ -7,9 +7,8 @@ import proj5 from '../assets/proj2.png';
 import proj6 from '../assets/proj3.png';
 
 const Projects = () => {
-    const projects = [
-
-         {
+    const Projects = [
+        {
             id: 1,
             image: proj1,
             title: 'E-Commerce Platform',
@@ -60,7 +59,7 @@ const Projects = () => {
     ];
 
     return (
-        <section className='py-16 bg-gray-900' id='project'>
+        <section className='py-16 bg-gray-900' id='projects'>
             <div className='container mx-auto px-4 max-w-7xl'>
 
                 <div className='text-center mb-10'>
@@ -81,14 +80,15 @@ const Projects = () => {
                 lg:grid-cols-3 gap-5'>
 
                     {Projects.map((project) => (
-
                         <div key={project.image}
-                        className='bg-gray-800 rounded-lg overflow-hidden
+
+                            className='bg-gray-800 rounded-lg overflow-hidden
                         shadow-sm hover:shadow-lg hover:scale-105
                         transition-all duration-300'>
 
                             <img src={project.image} alt={project.title}
-                            className='w-full h-44 object-cover
+
+                                className='w-full h-44 object-cover
                             hover:opacity-90 transition-opacity
                             duration-300' />
 
@@ -101,20 +101,14 @@ const Projects = () => {
 
                                 </h3>
 
-                                <p className='text-gray-400 text-sm mt-1'>
+                                <div className='flex flex-wrap gap-2 mt-1'>
 
-                                    {project.desc}
-
-                                </p>
-
-                                <div className='flex flex-wrap gap-1.5 mt-3'>
-
-                                    {project.tech.map((tec,idx) => (
+                                    {project.tech.map((tec, idx) => (
                                         <span key={idx}
-                                        className='text-xs px-2 py-0.5 bg-gray-700
-                                        text-gray-300 rounded hover:bg-primary 
+                                         className='text-xs px-2 py-0.5
+                                        bg-gray-700 text-gray-300 rounded hover:bg-primary
                                         hover:text-white transition-colors duration-300'>
-                                            {tec}
+                                           {tec}
 
                                         </span>
                                     ))}
