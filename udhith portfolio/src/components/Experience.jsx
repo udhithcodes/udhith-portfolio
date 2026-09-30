@@ -46,7 +46,7 @@ const Experience = () => {
 
         {
             id: 2,
-            role: 'Frontend Developer',
+            role: 'Full Stack Developer',
             company: 'spotify',
             date: 'Mar 2024 - Sep 2026'
         }
